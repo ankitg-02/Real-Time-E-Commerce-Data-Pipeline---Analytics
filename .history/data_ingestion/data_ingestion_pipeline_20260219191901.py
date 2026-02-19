@@ -1,0 +1,1 @@
+from data.static import StaticData

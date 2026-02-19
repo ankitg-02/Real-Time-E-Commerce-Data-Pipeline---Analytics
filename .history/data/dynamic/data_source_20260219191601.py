@@ -12,9 +12,5 @@ class DataSource:
             raise ValueError(f"Data source '{source_name}' not found in API dictionary.")
 
 #dynamic data source list
-for source in api_dict.keys():
-    try:
-        data_source = DataSource(source)
-        print(f"Data source '{source}' initialized with API URL: {data_source.api_url}")
-    except ValueError as e:
-        print(e)
+ds=DataSource("dummyjson")
+print(ds.api_url)
