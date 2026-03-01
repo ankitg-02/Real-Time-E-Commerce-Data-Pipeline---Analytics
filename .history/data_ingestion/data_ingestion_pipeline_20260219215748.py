@@ -15,7 +15,7 @@ class DataIngestionPipeline:
                 data_source = DataSource(source)
                 self.dynamic_data_sources.append(data_source)
             except ValueError as e:
-                print(e)
+                print(e)        
 if __name__ == "__main__":
     pipeline = DataIngestionPipeline()
     # Load static data
